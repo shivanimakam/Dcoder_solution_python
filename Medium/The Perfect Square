@@ -1,0 +1,10 @@
+import math
+n=int(input())
+for i in range(n):
+  num=int(input())
+  x=num
+  x=int(math.sqrt(x))
+  if abs(x*x-num)> abs(((x+1)**2)-num):
+    print(x+1)
+  else:
+    print(x)
