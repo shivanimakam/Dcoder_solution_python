@@ -1,0 +1,18 @@
+n,k=list(map(int,input().split()))
+nums=list(map(int,input().split()))
+flag=0
+for i in range(len(nums)):
+  t=nums[i]
+  if 2*t==k:
+    print("Yes")
+    flag=1
+    break
+  else:
+    y=k-t
+    if y in nums:
+      print("Yes")
+      flag=1
+      break
+if flag==0:
+  print("No")
+     
