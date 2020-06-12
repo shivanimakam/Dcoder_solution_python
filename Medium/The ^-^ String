@@ -1,0 +1,16 @@
+n=int(input())
+cnt=0
+for i in range(n):
+  num_char=0
+  flag=0
+  str1=input()
+  for k in range(len(str1)):
+    if str1[k].isalpha():
+      num_char=num_char+1
+      if str1[k-1] == "^" and str1[k+1] == "^":
+        flag=flag+1
+  if num_char == flag:
+    cnt=cnt+1
+print(cnt) 
+      
+        
