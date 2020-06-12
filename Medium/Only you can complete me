@@ -1,0 +1,11 @@
+import math
+n=float(input())
+i=1
+while True:
+  y=n
+  y=y*i
+  if y.is_integer():
+    print(i)
+    break
+  else:
+    i=i+1
