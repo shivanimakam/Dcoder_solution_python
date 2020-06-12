@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+  a=input()
+  print("Season ",end="")
+  print(int(a[1:3]),end="")
+  print(", Episode ",end="")
+  print(int(a[4:]))
