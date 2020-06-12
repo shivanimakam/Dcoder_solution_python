@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(n):
+  str1=input()
+  if str1.endswith("er"):
+    print(str1[:len(str1)-1]+"st")
+  elif str1.endswith("e"):
+    print(str1+"r")
+  elif str1.endswith("est"):
+    print(str1)
+  else:
+    print(str1+"er")
