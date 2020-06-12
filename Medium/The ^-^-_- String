@@ -1,0 +1,28 @@
+seq=input()
+x=seq
+i=0
+happy=0
+sad=0
+while i<len(x):
+  if seq.startswith("^_^"):
+    happy=happy+1
+    seq=seq[3:]
+    i=i+3
+  elif seq.startswith("_^"):
+    happy=happy+1
+    seq=seq[2:]
+    i=i+2
+  elif seq.startswith("-_-"):
+    sad=sad+1
+    seq=seq[3:]
+    i=i+4
+  else:
+    sad=sad+1
+    seq=seq[2:]
+    i=i+2
+if happy>sad:
+  print("Cody is happy with Dcoder")
+elif sad>happy:
+  print("Cody wants to leave job")
+else:
+  print("Cody doesn't know what to do")
