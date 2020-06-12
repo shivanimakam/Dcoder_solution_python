@@ -1,0 +1,29 @@
+n=int(input())
+stack=[]
+def stack_push(num):
+  stack.append(num)
+  
+def stack_pop():
+  if len(stack)>=1:
+    stack.pop()
+    
+def stack_peek():
+  l=len(stack)
+  l=l-1
+  print(stack[l])
+  
+for i in range(n):
+  query=input()
+  if query.startswith("PEEK"):
+    stack_peek()
+  elif query.startswith("PUSH"):
+    query=query.split()
+    stack_push(int(query[1]))
+  else:
+    stack_pop()
+sum=0
+for i in range(len(stack)):
+  sum=sum+stack[i]
+print(sum)
+    
+  
