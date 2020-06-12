@@ -1,0 +1,21 @@
+def l(x):
+  if x is 0:
+    return 2
+  elif x is 1:
+    return 1
+  else:
+    return(l(x-2)+l(x-1))
+n=int(input())
+x=0
+while True:
+  val=l(x)
+  if val<n:
+    x=x+1
+    continue
+  else:
+    break
+if n == l(x):
+  print(l(x+1))
+else:
+  print(l(x))
+  
