@@ -1,0 +1,9 @@
+word=list(map(str,input().split()))
+for i in range(len(word)):
+  x=""
+  for j in range(len(word[i])):
+    if word[i][j].isalpha():
+      x=x+word[i][j]
+  word[i]=x
+longest_str=max(word, key=len)
+print(longest_str)
