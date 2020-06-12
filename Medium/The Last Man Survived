@@ -1,0 +1,14 @@
+n=int(input())
+for i in range(n):
+  num=int(input())
+  nums=list(range(1, num+1))
+  j=0
+  while len(nums)>1:
+    last=nums[len(nums)-1]
+    for k in range(int(len(nums)/2)):
+      del nums[k+1]
+    last1=nums[len(nums)-1]
+    if last==last1:
+      nums.insert(0,last1)
+      del nums[len(nums)-1]
+  print(nums[0])
