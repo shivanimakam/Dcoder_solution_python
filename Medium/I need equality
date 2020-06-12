@@ -1,0 +1,14 @@
+a=input()
+b=list(input())
+flag=0
+for i in a:
+  try:
+    if b.index(i):
+      b.remove(i)
+  except:
+    flag=1
+    break
+if flag is 1:
+  print("No")
+else:
+  print("Yes")
