@@ -1,0 +1,14 @@
+n=int(input())
+for i in range(n):
+  N,M=list(map(int, input().split()))
+  N=N+1
+  Rem=M%N
+  All=M//N
+  for j in range(Rem):
+    print(All+1,end=" ")
+  for k in range(N-Rem):
+    if k == N-Rem-1:
+      print(All,end="")
+    else:
+      print(All,end=" ")
+  print("")
