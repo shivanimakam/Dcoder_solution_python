@@ -1,0 +1,18 @@
+n=int(input())
+for i in range(n):
+  item=input()
+  item=list(item)
+  item_count={}
+  for j in range(len(item)):
+    fruit=item[j]
+    if fruit in item_count:
+      item_count[fruit]=item_count[fruit]+1
+    else:
+      item_count[fruit]=1
+  cost=0
+  for num in item_count.values():
+    cost=cost+int(num/2)+num%2
+  print(cost)
+    
+
+ 
