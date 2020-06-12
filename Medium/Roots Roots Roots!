@@ -1,0 +1,7 @@
+import math
+a,b,c=list(map(float, input().split()))
+delta = b*b - 4*a*c;
+if delta >= 0:
+  print("%.2f" %(-b/a));
+else:
+  print(" ");
