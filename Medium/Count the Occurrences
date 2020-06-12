@@ -1,0 +1,13 @@
+n=int(input())
+nums=list(map(int, input().split()))
+qu_n=int(input())
+for i in range(qu_n):
+  x=int(input())
+  cnt=0
+  for k in range(len(nums)):
+    if x==nums[k]:
+      cnt=cnt+1
+  if cnt is 0:
+    print("-1")
+  else:
+    print(cnt)
