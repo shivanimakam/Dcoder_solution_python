@@ -1,0 +1,7 @@
+n,k=list(map(int,input(). split()))
+nums=list(map(int,input(). split()))
+for i in range(k):
+  max_el=max(nums)
+  index=nums.index(max_el)
+  nums[index]=0
+print(max_el)
