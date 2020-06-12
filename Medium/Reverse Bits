@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+  num=int(input())
+  bin_num=bin(num).replace("0b", "")
+  bin_num=bin_num[::-1]
+  num=int(bin_num,2)
+  print(num)
