@@ -1,0 +1,4 @@
+p=input()
+q=input()
+ind=p.index(q)
+print(ind)
