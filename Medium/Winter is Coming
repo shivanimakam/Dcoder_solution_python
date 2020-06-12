@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+  n_k=int(input())
+  sol=list(map(int,input(). split()))
+  sum1=0
+  sum2=0
+  for j in range(n_k):
+    if j%2==0:
+      sum1+=sol[j]
+    else:
+      sum2+=sol[j]
+  if sum1>sum2:
+    print(sum1)
+  else:
+    print(sum2)
