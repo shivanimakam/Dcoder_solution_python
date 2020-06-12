@@ -1,0 +1,16 @@
+n=int(input())
+nums=list(map(int, input(). split()))
+for i in range(len(nums)):
+  j=1
+  flag=0
+  while True:
+    if j**j==nums[i]:
+      print("Yes",end=" ")
+      break
+    elif j**j < nums[i]:
+      j=j+1
+    else:
+      flag=1
+      break
+  if flag==1:
+    print("No",end=" ")
