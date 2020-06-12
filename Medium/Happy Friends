@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(n):
+  num_of_fnd=int(input())
+  stfy=list(map(int,input().split()))
+  stfy_num=int(input())
+  num_gift=0
+  for i in range(stfy_num):
+    num_gift=num_gift+min(stfy)
+    pos_min=stfy.index(min(stfy))
+    stfy[pos_min]=9999999
+  print(num_gift)
