@@ -1,0 +1,13 @@
+word=input()
+D=int(input())
+if D > 26:
+  D=D%26
+for i in range(len(word)):
+  x=ord(word[i])
+  x=x-D
+  if x<97:
+    x=97-x
+    x=122-x+1
+    print(chr(x),end="")
+  else:
+    print(chr(x),end="")
