@@ -1,0 +1,3 @@
+str=input()
+index=str.index("?")
+print(str[:index],end=", please?")
