@@ -1,0 +1,11 @@
+n=int(input())
+l=list(map(int,input().split()))
+dict={}
+for i in range(len(l)):
+  y = l[i]
+  if y in dict:
+    del dict[y] 
+  else:
+    dict[y]=1
+val=list(dict.keys())
+print(val[0])
