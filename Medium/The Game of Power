@@ -1,0 +1,23 @@
+t=int(input())
+for i in range(t):
+  num=int(input())
+  diff=99999
+  flag=0
+  for j in range(2,int(num**(1/2))+2):
+    for k in range(2,int(num**(1/2))+2):
+      y=int(j**k)
+      #print("y",y)
+      if y==num:
+        print("0")
+        flag=1
+        break
+      else:
+        ldiff=abs(num-y)
+        if diff>ldiff:
+          diff=ldiff
+  if flag==0 and num!=1:
+    print(diff)
+  if num==1:
+    print("0")
+
+        
