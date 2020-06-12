@@ -1,0 +1,19 @@
+def check_win(board,val):
+  if board[0]==board[1]==board[2]==val or board[3]==board[4]==board[5]==val or board[6]==board[7]==board[8]==val or board[0]==board[3]==board[6]==val or board[1]==board[4]==board[7]==val or board[2]==board[5]==board[8]==val or board[0]==board[4]==board[8]==val or board[2]==board[4]==board[6]==val:
+    return 1
+  else:
+    return 0
+
+row1=input()
+row2=input()
+row3=input()
+board=row1+" "+row2+" "+row3
+board=board.split()
+p1=check_win(board,'X')
+p2=check_win(board,'O')
+if p1==1 and p2==0:
+  print("Player 1")
+elif p2==1 and p1==0:
+  print("Player 2")
+else:
+  print("Draw")
