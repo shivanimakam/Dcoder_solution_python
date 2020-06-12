@@ -1,0 +1,9 @@
+n=int(input())
+for i in range(n):
+  l,a=list(map(str,input().split()))
+  if a.isnumeric():
+    print("Number")
+  elif a.isalpha():
+    print("String")
+  else:
+    print("Variable")
