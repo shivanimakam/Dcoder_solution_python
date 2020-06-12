@@ -1,0 +1,11 @@
+def find_next(num):
+  x,y=0,1
+  while y<=num:
+    x,y=y,x+y
+  return y  
+n=int(input())
+for i in range(n):
+   num=int(input())
+   nxt_fib=find_next(num)
+   print(nxt_fib)
+  
