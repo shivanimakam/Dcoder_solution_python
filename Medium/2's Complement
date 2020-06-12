@@ -1,0 +1,10 @@
+str1=input()
+l=[]
+for i in range(len(str1)):
+  if str1[i] == '0':
+    l.append('1')
+  else:
+    l.append('0')
+k="".join(l)
+num=int(k,2)
+print(num+1)
