@@ -1,0 +1,24 @@
+def find_gcd(a,b):
+  div=a
+  divi=b
+  if divi > div:
+    div,divi=divi,div
+  while(1):
+    q=div//divi
+    r=div%divi
+    if r == 0:
+      break
+    div=divi
+    divi=r
+  return divi
+
+st,end=list(map(int, input().split()))
+l=[]
+for i in range(st,end+1):
+  l.append(i)
+num1=l[0]
+num2=l[1]
+ans=(num1*num2)/(find_gcd(num1,num2))
+for i in range(2,len(l)):
+  ans=(ans*l[i])/(find_gcd(ans,l[i]))
+print(int(ans))
