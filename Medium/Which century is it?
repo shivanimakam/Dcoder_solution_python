@@ -1,0 +1,20 @@
+year=int(input())
+century=0
+if year<=100:
+  century=1
+elif year%100==0:
+  century=int(year/100)
+else:
+  century=int(year/100)+1
+if century>10 and century<20:
+  print(str(century)+"th")
+else:
+  century=str(century)
+  if century.endswith("1"):
+    print(century+"st")
+  elif century.endswith("2"):
+    print(century+"nd")
+  elif century.endswith("3"):
+    print(century+"rd")
+  else:
+    print(century+"th")
