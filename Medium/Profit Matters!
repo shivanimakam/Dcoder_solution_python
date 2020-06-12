@@ -1,0 +1,11 @@
+l=input()
+l=l[1:len(l)-1]
+l=l.split(",")
+for i in range(len(l)):
+  l[i]=int(l[i])
+min_l=min(l)
+max_l=max(l)
+if len(l)>1:
+  print("["+str(min_l)+","+str(max_l)+"]")
+else:
+  print("["+str(min_l)+"]")
