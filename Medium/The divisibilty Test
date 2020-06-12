@@ -1,0 +1,18 @@
+t=int(input())
+for i in range(t):
+  n,x,y=list(map(int, input().split()))
+  ai=x
+  j=1
+  l=[]
+  while ai<n:
+    if ai%x==0 and ai%y!=0: 
+      l.append(ai)                    
+    j=j+1
+    ai=x*j
+  for k in range(len(l)):
+    if k==len(l)-1:
+      print(l[k])
+    else:
+      print(l[k],end=" ")
+  
+    
