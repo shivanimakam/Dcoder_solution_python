@@ -1,0 +1,8 @@
+n=int(input())
+num=list(map(int,input().split()))
+for i in range(len(num)):
+  if num[i]%6 is 0 and num[i]!=0:
+    k=len(str(num[i]))
+    print("*"*k,end=" ")
+  else:
+    print(num[i],end=" ")
