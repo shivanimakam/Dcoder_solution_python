@@ -1,0 +1,7 @@
+str1=int(input())
+num=bin(str1).replace("0b", "") 
+num=str(num)
+if "000000" in num or "111111" in num:
+  print("Bad")
+else:
+  print("Good")
