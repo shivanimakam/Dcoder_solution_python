@@ -1,0 +1,22 @@
+convert={
+  10:'A',11:'B',12:'C',13:'D',14:'E',15:'F'
+}
+n=int(input())
+for i in range(n):
+  num,base=list(map(int,input().split()))
+  val=[]
+  while num>=base:
+    rem=num%base
+    val.insert(0,rem)
+    num=num//base
+  else:
+    val.insert(0,num)
+  for j in range(len(val)):
+    if val[j]>9:
+      print(convert[val[j]],end="")
+    else:
+      print(val[j],end="")
+  print("")
+    
+    
+  
