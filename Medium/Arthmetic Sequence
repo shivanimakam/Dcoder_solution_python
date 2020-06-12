@@ -1,0 +1,19 @@
+m=int(input())
+for i in range(m):
+  dict={}#store all common differnce in dictionary which has more occurnce select that common differnce
+  n=int(input())
+  ap=list(map(int, input(). split()))
+  for k in range(1,len(ap)):
+    d=ap[k]-ap[k-1]
+    if d in dict:
+      dict[d]=dict[d]+1
+    else:
+      dict[d]=1
+  cd = max(dict, key=dict.get) 
+  for k in range(1,len(ap)):
+    if ap[k]==ap[k-1]+cd:
+      continue
+    else:
+      print(ap[k])
+      break
+  
