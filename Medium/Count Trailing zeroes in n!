@@ -1,0 +1,7 @@
+n=int(input())
+cnt=0
+div=5
+while((n/div)>0):
+  cnt=cnt+int(n/div)
+  div=div*5
+print(cnt)
