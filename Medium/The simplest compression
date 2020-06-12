@@ -1,0 +1,26 @@
+str1=input()
+dic={}
+a=str1[0]
+dic[a]=1
+comp=""
+for i in range(1,len(str1)):
+  if str1[i]==str1[i-1]:
+    dic[str1[i]]=dic.get(str1[i])+1
+  else:
+    for key, value in dic.items():
+      comp=comp+key
+      if value >1:
+        comp=comp+str(value)
+    b=str1[i-1]
+    del dic[b]
+    dic[str1[i]]=1
+if str(dict):
+  for key, value in dic.items():
+      comp=comp+key
+      if value >1:
+        comp=comp+str(value)
+if len(comp)>=len(str1):
+  print(str1)    
+else:
+  print(comp)
+  
