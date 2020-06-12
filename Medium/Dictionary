@@ -1,0 +1,9 @@
+dict1={}
+dict_len=int(input())
+for i in range(dict_len):
+  dict_val=list(map(str,input(). split()))
+  dict1[dict_val[0]]=dict_val[1]
+n=int(input())
+for i in range(n):
+  srch_val=input()
+  print(dict1[srch_val])
