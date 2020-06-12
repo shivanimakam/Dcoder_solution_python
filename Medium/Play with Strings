@@ -1,0 +1,18 @@
+n=int(input())
+for i in range(n):
+  s=input()
+  j=0
+  while j<len(s):
+    x=""
+    for k in range(j,len(s)):
+      if s[k]==" ":
+        break
+      else:
+        x=x+s[k]
+        j=j+1
+    for l in range(len(x)-1,-1,-1):
+      print(x[l],end="")
+    j=j+1
+    if j<len(s):
+       print(" ",end="")
+  print("")
