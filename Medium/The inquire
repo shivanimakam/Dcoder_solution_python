@@ -1,0 +1,11 @@
+house=int(input())
+people=list(map(int, input().split()))
+queries=int(input())
+for i in range(queries):
+  start,end=list(map(int, input().split()))
+  start=start-1#list starts from 0
+  sum=0
+  for j in range(start,end):
+    sum=sum+people[j]
+  print(sum)
+  
