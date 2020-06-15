@@ -1,0 +1,23 @@
+n=int(input())
+prev=[]
+for i in range(1,n+1):
+  for j in range(i,n):
+    print(" ",end="")
+  if i==1:
+    prev.append(1)
+  else:
+    cur=[1]
+    for i in range(len(prev)-1):
+      x=prev[i]+prev[i+1]
+      cur.append(x)
+    cur.append(1)
+    prev=cur
+  for m in range(len(prev)):
+    if m !=len(prev)-1:
+      print(prev[m],end=" ")
+    else:
+      print(prev[m],end="")
+  print("")
+      
+    
+    
